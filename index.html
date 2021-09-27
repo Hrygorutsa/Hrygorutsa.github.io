@@ -1,8 +1,8 @@
 <html>
 	<head>
-		<meta charset="utf-8"></meta>
+		<meta charset="utf-8">
 		<title>Сайт web-студії "Web-DECO</title>
-		<!--=========java script=========-->
+		
 		<script src="js/clock1.js"></script>
 		<script type="text/javascript">
 		function send(){
@@ -33,7 +33,7 @@
 
 
 		</script>
-		<!--==== css styles =====-->
+		
 		<style>
 			.shadowtext{
 			text-shadow: 1px 3px 2px white, 0 0 1em red;
@@ -94,35 +94,26 @@
 						</font>
 					</font>
 					<hr>
-					<H1 align="center"><font color="green">Реєстрація</font></H1>
+					<H1 align="center"><font color="green">Registration</font></H1>
 					<form action="forma.php" method="post" onsubmit="return send() ;">
 					<table align="center" bgcolor="#ccc">
-						<tr>
-							<td>
-								<font color="green">Прізвище</font>:
-							</td>
-							<td>
-								<input type="text" size="10" maxlength="20" name="name2">
-							</td>
-							<td>
-								<font color="green">Ім'я</font>:
-							</td>
-							<td>
-								<input type="text" size="10" maxlength="20" name="name1">
-							</td>
-							<td>
-								<font color="green">E-mail</font>:
-							</td>
-							<td>
-								<input type="text" size="10" maxlength="20" name="email">
-							</td>
-							<td>
-								<font color="green">Пароль</font>:
-							</td>
-							<td>
-								<input type="text" size="10" maxlength="20" name="password">
-							</td>
-						</tr>
+                            <tr>
+                                    <td><font color="green">Surename</font>: </td>
+                                    <td><input type="text" size="10" maxlength="20" name="name2"></td>
+                                 </tr>
+                                 <tr>
+                                        <td><font color="green">Name</font>: </td>
+                                        <td><input type="text" size="10" maxlength="20" name="name1"></td>
+                                </tr>
+                                <tr>
+                                        <td><font color="green">E-mail</font>: </td>
+                                        <td><input type="email" size="10" maxlength="20" name="email"></td>
+                                 </tr>
+                                 <tr>
+                                            <td><font color="green">Password</font>: </td>
+                                            <td><input type="password" size="10" maxlength="20" name="password"></td>
+                                 </tr>
+                                </tr>
 					</table>
 						<p align="center">
 							<input type="Submit" value="Registration">
