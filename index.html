@@ -2,6 +2,7 @@
         <HEAD>
             <meta charset="utf-8">
             <title>Сайт web-студії "Web-DECO" </title>
+            <script src="js/clock1.js"></script>
             <style>
             .shadowtext {
              text-shadow: 1px 3px 2px white, 0 0 1 1em red;
@@ -45,6 +46,15 @@ for(var i=0; i<document.forms[0].length; i++)
                 </tr>
                 <tr>
                     <td width="30%" valign="top">
+                        <h1 align="center">Thanks for register !</h1>
+                        <?php
+                        $st=$_POST['name2'].";".$_POST['name1'].";".$_POST['nic1'].";".$_POST['email'].";".$_POST['password']."\n";
+
+                        $fp=fopen("baza.txt","a");
+                        $test=fwrite($fp,$st);
+                        echo "<h2 align='center'>You inputed :".$_POST['name2'].",".$_POST['name1'].",".$_POST['nic1'].",".$_POST['email'].";".$_POST['password']."</h2>";
+                        ?>
+                    </h1>
                         <center><canvas id="canvas" height="120" width="120"></canvas></center> 
                         <hr>
                         <font size="5" color="navy"><h2>News</h2></font>
